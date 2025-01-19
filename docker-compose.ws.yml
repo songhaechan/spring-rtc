@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./
+    container_name: rtc
+    ports:
+      - "8080:8080"
+    networks:
+      rtc:
+    restart: always
+    tty: true
+    environment:
+      SPRING_PROFILES_ACTIVE: websocket
+
+networks:
+  rtc:
