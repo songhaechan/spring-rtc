@@ -3,7 +3,7 @@ server:
 
 spring:
   profiles:
-    active: websocket
+    active: ws
     group:
-      websocket: ws
+      ws: ws
       stomp: stomp

@@ -11,7 +11,7 @@ services:
     restart: always
     tty: true
     environment:
-      SPRING_PROFILES_ACTIVE: websocket
+      SPRING_PROFILES_ACTIVE: ws
 
 networks:
   rtc:
