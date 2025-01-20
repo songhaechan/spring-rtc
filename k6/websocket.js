@@ -6,9 +6,9 @@ const wsUrl = "ws://34.22.108.61:8080/ws/chat";
 
 export let options = {
   stages: [
-    { duration: "20s", target: 300 },
-    { duration: "30s", target: 10000 },
-    { duration: "10s", target: 0 },
+    { duration: "20s", target: 10 },
+    // { duration: "30s", target: 10000 },
+    // { duration: "10s", target: 0 },
   ],
 };
 
@@ -38,7 +38,7 @@ export default function () {
 }
 
 export function websocketTest() {
-  initializeWebSocketConnection();
+  //   initializeWebSocketConnection();
   ws.connect(wsUrl, function (socket) {
     socket.on("open", function () {
       socket.send("Hello from k6!");
